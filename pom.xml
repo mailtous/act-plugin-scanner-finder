@@ -13,7 +13,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <act.version>1.4.9</act.version>
+        <act.version>[1.4.9,)</act.version>
+        <logback.version>[1.1.6,)</logback.version>
     </properties>
 
     <dependencies>
@@ -21,14 +22,12 @@
             <groupId>org.actframework</groupId>
             <artifactId>act</artifactId>
             <version>${act.version}</version>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.1.6</version>
-            <scope>provided</scope>
+            <version>${logback.version}</version>
         </dependency>
 
     </dependencies>
